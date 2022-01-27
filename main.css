@@ -12,6 +12,7 @@ body{
 }
 #background{
     display: flex;
+    position: relative;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(ooo.png); 
   background-position: center;
   background-size: cover;
@@ -38,7 +39,7 @@ body{
     font-size: 5.6em;
     font-weight: 650;
     padding-top: 100px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 } 
 #third{
     margin-bottom: 100px;
@@ -46,4 +47,118 @@ body{
 #third p{
     font-size: 1.7em; 
 }
+#image{
+    display: flex;
+  height: 10%;
+  align-self: center;
+  justify-self: end;
+  align-items: flex-end;
+  transform: translate(0px, 50%);
+}
+#image img{
+    height: 50px;
+    width: 50px;
+}
+
+@media (max-width: 750px ) {
+    #first p{
+        font-size: 0.8em;
+        font-weight: 650;
+    }
+    #second p{
+        font-size: 3.6em;
+        font-weight: 650;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    } 
+    #third{
+        margin-bottom: 100px;
+    }
+    #third p{
+        font-size: 1.3em; 
+    }
+    #image{
+        transform: translate(0px, 10%);
+    }
+    #image img{
+        height: 40px;
+        width: 40px;
+    } 
+}
+@media (max-width: 300px ) { /*Настройка размеров чисто для Galaxy Fold (раскладушка сенсорная от самсунг)*/
+    #first p{
+        font-size: 0.6em;
+        font-weight: 650;
+    }
+    #second p{
+        font-size: 2.5em;
+        font-weight: 650;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    } 
+    #third{
+        margin-bottom: 100px;
+    }
+    #third p{
+        font-size: 1.0em; 
+    }
+    #image{
+        transform: translate(0px, 5%);
+    }
+    #image img{
+        height: 35px;
+        width: 35px;
+    } 
+}
+@media (max-height: 450px ) {
+    #first p{
+        font-size: 0.8em;
+        font-weight: 650;
+    }
+    #second p{
+        font-size: 3.6em;
+        font-weight: 650;
+        padding-top: 70px;
+        padding-bottom: 30px;
+    } 
+    #third{
+        margin-bottom: 70px;
+    }
+    #third p{
+        font-size: 1.3em; 
+    }
+    #image{
+        transform: translate(0px, 5%);
+    }
+    #image img{
+        height: 40px;
+        width: 40px;
+    } 
+}
+@media (max-height: 750px ) and (max-width: 400px) {
+    #first p{
+        font-size: 0.7em;
+        font-weight: 650;
+    }
+    #second p{
+        font-size: 3em;
+        font-weight: 650;
+        padding-top: 70px;
+        padding-bottom: 30px;
+    } 
+    #third{
+        margin-bottom: 70px;
+    }
+    #third p{
+        font-size: 1em; 
+    }
+    #image{
+        transform: translate(0px, 5%);
+    }
+    #image img{
+        height: 40px;
+        width: 40px;
+    } 
+}
+
 
