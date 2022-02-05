@@ -60,6 +60,11 @@
 body{
   font-family: Lato;
 }
+.intro__body{}
+.intro__logo{}
+.intro__text{}
+.intro__button{}
+.intro__arrow{}
 
 .about__body{
     max-width: 823px;
