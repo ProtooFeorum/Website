@@ -60,12 +60,75 @@
 body{
   font-family: Lato;
 }
-.intro__body{}
-.intro__logo{}
-.intro__text{}
-.intro__button{}
-.intro__arrow{}
+.intro{
+  background: url(img/logo/BG.png);
+  background-position: center;
+  background-size:cover;
+}
+.intro__body{
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.intro__logo{
+  display: block;
+  width: 195px;
+  height: 123px;
+  padding: 160px 0px 300px 0px;
+  margin: 0 auto;
+}
+.intro__title{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 710;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  position: relative;
+  text-align: center;
+  padding: 0px 0px 40px 0px; }
+  .intro__title p{
+    font-size: 23px;
+    font-weight: 400;
+    text-transform: lowercase;
+    letter-spacing: 3px;
+    padding-top: 10px;
+  }
+  .intro__title:after{
+    content: '';
+    position: absolute;
+    width: 90px;
+    bottom: 0;
+    height: 2px;
+    left: 50%;
+    background-color: #fff;
+    margin: 0px 0px 0px -45px; 
+  }  
 
+.intro__button{
+  display: flex;
+  margin: 227px auto 70px auto;
+  height: 47px;
+  width: 182px;
+  border: 1px solid #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.95px;}
+  .intro__button button{
+  height: 47px;
+  width: 182px;
+  background-color: transparent;
+  color: #fff;
+  }
+.arrow-img{
+  display: block;
+  height: 10px;
+  width: 17px;
+  margin: 0px auto 150px auto; 
+}
 .about__body{
     max-width: 823px;
     margin: 0 auto;
@@ -74,7 +137,7 @@ body{
   margin: 0px 0px 65px 0px; 
 }
 .about__title{
-    margin: 30px 0px 30px 0px;
+    margin: 130px 0px 30px 0px;
 }
 .about__text{
     max-width: 688px;
@@ -96,22 +159,22 @@ body{
 }
 
 .title {
-    font-size: 34px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 710;
     text-transform: uppercase;
-    letter-spacing: 8.95px;
+    letter-spacing: 5px;
     position: relative;
     text-align: center;
     padding: 0px 0px 30px 0px; }
     .title:after {
       content: '';
       position: absolute;
-      width: 50px;
+      width: 80px;
       bottom: 0;
       height: 1px;
       left: 50%;
       background-color: #000;
-      margin: 0px 0px 0px -25px; 
+      margin: 0px 0px 0px -40px; 
     }
 .item-about__icon{
     display: flex;
