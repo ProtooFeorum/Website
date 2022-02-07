@@ -104,7 +104,6 @@ body{
     background-color: #fff;
     margin: 0px 0px 0px -45px; 
   }  
-
 .intro__button{
   display: -webkit-flex;
   display: flex;
@@ -114,7 +113,7 @@ body{
   border: 1px solid #fff;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1.95px;}
@@ -123,7 +122,7 @@ body{
   width: 182px;
   background-color: transparent;
   color: #fff;
-  }
+  } 
 
 .arrow-img{
   display: block;
@@ -250,6 +249,9 @@ body{
   padding: 20px 0px 100px 0px;
 }  
 .portfolio__body{
+  display: flex;
+  flex-direction: column;
+  position: relative;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -267,7 +269,7 @@ body{
 .portfolio__item{
   height: 320px;
   width: 500px;
-  margin: 18px 0px 18px 0px;
+  margin: 18px 18px 18px 18px;
   background-color: #eaeaea;
   justify-content: center;
 }
@@ -275,10 +277,28 @@ body{
   width: 50%;
   height: 50%;
 }
-@media (max-width:1050px){
+@media (max-width:1085px){
   .portfolio__content{
     flex-direction: column;
     align-items: center;
-    
   }
 }
+.portfolio__button{
+  display: -webkit-flex;
+  display: flex;
+  margin: 30px auto 48px auto;
+  height: 47px;
+  width: 182px;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.95px;}
+  .portfolio__button button{
+  height: 47px;
+  width: 182px;
+  background-color: transparent;
+  color: black;
+  } 
