@@ -142,7 +142,7 @@ body{
    margin: 0 auto;
    justify-content: space-between;
    align-items: center;}
-.menu a{
+   .menu a{
     color: rgb(110, 108, 108);
     text-decoration: none;
 }
