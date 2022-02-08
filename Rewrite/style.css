@@ -302,3 +302,36 @@ body{
   background-color: transparent;
   color: black;
   } 
+
+.partners{
+  background: url("/Rewrite/img/partners/Partners-bg.png") bottom center / cover no-repeat;
+  
+}  
+.partners__body{
+  max-width: 550px;
+  margin: 0 auto;
+}
+.partners__title{
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 1.5 px;
+  padding: 100px 0px 0px 0px;
+}
+.partners__logos{
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+}
+#logo4{
+  width: 45px;
+  height: 45px;
+}
