@@ -283,10 +283,13 @@ body{
     align-items: center;
   }
 }
+.portfolio__button_content{
+  padding: 40px 0px 55px 0px;
+}
 .portfolio__button{
   display: -webkit-flex;
   display: flex;
-  margin: 30px auto 48px auto;
+  margin: 0px auto;
   height: 47px;
   width: 182px;
   border: 1px solid black;
@@ -304,9 +307,10 @@ body{
   } 
 
 .partners{
-  background: url("/Rewrite/img/partners/Partners-bg.png") bottom center / cover no-repeat;
-  
-}  
+  background: url(img/logo/BG.png);
+  background-position: center;
+  background-size:cover;
+} 
 .partners__body{
   max-width: 550px;
   margin: 0 auto;
@@ -323,13 +327,14 @@ body{
 .partners__logos{
   display: flex;
   justify-content: space-between;
-  padding: 100px;
+  padding: 100px 0px 100px 60px;
 }
 .logo{
   display: flex;
   align-items: center;
   width: 55px;
   height: 55px;
+  padding: 0px 120px 0px 0px;
 }
 #logo4{
   width: 45px;
