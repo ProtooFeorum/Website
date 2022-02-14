@@ -28,22 +28,29 @@
     justify-content: space-between;
     justify-self: end;
 }
-.navigation-button{}
   .navigation-button:hover{
      cursor: pointer;
+     opacity: 0.5;
   }
 .shop-page{
-  max-width: 1600px; 
-  max-height: 800px; 
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 1800px; 
   margin: 0 auto;
   padding: 20px;
 }
 .shop-page__menu{
-    display: flex;
-    flex-direction: column;
     width: 400px;
+    height: 100%;
     padding: 10px;
+    flex: 0 0 auto;
+    margin: 0px 15px 0px 0px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.menu__content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .menu__search{
   display: flex;
@@ -86,9 +93,10 @@
     display: flex;
     position: relative;
     height: 30px;
-    margin: 5px;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
+    margin: 437px 0px 0px 0px;
     justify-content: center;
+    justify-self: flex-end;
     align-items: center;
     border-radius: 5px;
     padding: 5px;
@@ -96,6 +104,76 @@
     color: white;
     font-weight: 500;
     cursor: pointer;
-}  
+} 
+.shop-page__catalog{
+  display: flex;
+  flex-flow: row wrap;
+  overflow:auto;
+  min-height: min-content;
+}
 
-        
+.catalog__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 5px 5px 5px;
+  width: 230px;
+  height: 258px;}
+.item-photo{
+  background: url(img/doka.png);
+  background-size:cover;
+  width: 230px;
+  height: 230px;}
+  .item-photo:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: .25s ease 0s;
+    background-size:cover;
+  }
+  .item-photo-hovered{
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    margin: 0px 0px 0px 230px; 
+    background-color: white;
+  }
+  .photo-title{
+    display: block;
+    align-self: center;
+    padding: 5px;
+    font-size: 20px;
+  }
+  .photo-lower-text{
+    text-align: center;}
+    .photo-lower-text{
+      padding: 5px 5px 10px 5px;
+    }
+  .item-photo:hover .item-photo-hovered{
+    display: flex;
+    flex-direction: column;
+    opacity: none;
+  }
+.item-menu{
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  width: 100%;}
+  
+.item-selection{
+  display: flex;
+  height: 28px;
+  width: 50%;
+  background-color: #63a2dd;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.item-selection:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+  .item-selection:last-child{
+    border-left: 1px solid white;
+  }

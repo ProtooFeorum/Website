@@ -37,8 +37,25 @@
                </div>
              </div> 
              <div class="shop-page__catalog">
-                 <?php
-                 ?>
+             <?php for($i=0; $i < 15; $i++){  ?>
+                <div class="catalog__item">
+                    <div class="item-photo">
+                        <div class="item-photo-hovered">
+                         <div class="photo-title">DOKA 2 TRADE</div> 
+                            <div class="photo-lower-text">
+                                <p>The Winner in Every Year's Premium Awards "Solovinyi Pomet"</p>
+                                <p>The BEST Game Of The 2020s Year</p>
+                               <H3> <a href="https://www.youtube.com/watch?v=Xf-8anqrIJ4">SHOW MORE</a> </H3>
+                            </div>
+                        </div>
+                    </div>
+                         <div class="item-menu">
+                             <div class="item-selection">Buy</div>
+                             <div class="item-selection">1000000$</div>
+                          </div>
+                </div>  
+                <?php } ?>
+                
              </div>
         </div>
     </div>
